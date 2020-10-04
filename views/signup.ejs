@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="css/signup.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+ <!--  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main> -->
+
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3 id="welcome">Welcome to TeleDoc</h3>
+                        <p>You are 30 seconds away from joining us!</p>
+                        <a href="signin.ejs"><button class="btnRegister" style="margin-top: 70px;">Click here to SignIn</button></a>
+
+
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                           <!--  <li class="nav-item">
+                                <a class="nav-link active" id="clinic-tab" data-toggle="tab" href="#clinic" role="tab" aria-controls="clinic" aria-selected="true">Clinic</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link active" id="doctor-tab" data-toggle="tab" href="#doctor" role="tab" aria-controls="doctor" aria-selected="true">Doctor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="patient-tab" data-toggle="tab" href="#patient" role="tab" aria-controls="patient" aria-selected="false">Patient</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                           <!--  <div class="tab-pane fade show active" id="clinic" role="tabpanel" aria-labelledby="clinic-tab">
+                                <h3 class="register-heading">Clinic Registration</h3>
+                                <div class="row formbox">
+                                    <div class="col-md-6">
+                                       <form action="/addnewclinic" method="POST" class="register-form">
+                                             <input type="text" class="form-control" placeholder="Name" name="name" required/>
+                                             <input type="number" class="form-control" placeholder="age" name="age" required/>
+                                             <input type="text" class="form-control" placeholder="city" name="city" required/>
+                                             <input type="text" class="form-control" placeholder="state" name="state" required/>
+                                             <input type="text" class="form-control" placeholder="country" name="country" required/> 
+                                               
+                                             
+                                    </div>
+
+                                    <div class="col-md-6">
+                                             <input id="rt" type="email" class="form-control" placeholder="Email" value="" name="email" required/>
+                                             <input id="rt" type="text" minlength="10" maxlength="10" name="phone" class="form-control" placeholder="Mobile No." required />
+                                             <input id="rt" type="text" minlength="6" maxlength="6" name="pincode" class="form-control" placeholder="PIN Code" required />
+                                             <input id="rt" type="password" class="form-control"  name="pass" placeholder="Password" required/>
+                                        <button class="btnRegister" onclick="newRegister()">Register</button>
+                                    </div>
+
+                                       </form>
+                                </div>
+                            </div> -->
+                            <div class="tab-pane fade show active" id="doctor" role="tabpanel" aria-labelledby="doctor-tab">
+                                <h3  class="register-heading">Doctor Registration</h3>
+                                 <div class="row formbox">
+                                    <div class="col-md-6">
+                                       <form action="/addnewdoctor" method="POST" class="register-form">
+                                             <input type="text" class="form-control" placeholder="Name" name="name" required/>
+                                             <input type="number" class="form-control" placeholder="age" name="age" required/>
+                                             <input type="text" class="form-control" placeholder="city" name="city" required/>
+                                             <input type="text" class="form-control" placeholder="state" name="state" required/>
+                                             <input type="text" class="form-control" placeholder="country" name="country" required/> 
+                                               
+                                             
+                                    </div>
+
+                                    <div class="col-md-6">
+                                             <input id="rt" type="email" class="form-control" placeholder="Email" value="" name="email" required/>
+                                             <input id="rt" type="text" minlength="10" maxlength="10" name="phone" class="form-control" placeholder="Mobile No." required />
+                                             <input id="rt" type="text" minlength="6" maxlength="6" name="pincode" class="form-control" placeholder="PIN Code" required />
+                                             <input id="rt" type="password" class="form-control"  name="pass" placeholder="Password" required/>
+                                        <button class="btnRegister" onclick="newRegister()">Register</button>
+                                    </div>
+
+                                       </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="patient" role="tabpanel" aria-labelledby="patient-tab">
+                                <h3  class="register-heading">Patient Registration</h3>
+                                 <div class="row formbox">
+                                    <div class="col-md-6">
+                                       <form action="/addnewpatient" method="POST" class="register-form">
+                                             <input type="text" class="form-control" placeholder="Name" name="name" required/>
+                                             <input type="number" class="form-control" placeholder="age" name="age" required/>
+                                             <input type="text" class="form-control" placeholder="city" name="city" required/>
+                                             <input type="text" class="form-control" placeholder="state" name="state" required/>
+                                             <input type="text" class="form-control" placeholder="country" name="country" required/> 
+                                               
+                                             
+                                    </div>
+
+                                    <div class="col-md-6">
+                                             <input id="rt" type="email" class="form-control" placeholder="Email" value="" name="email" required/>
+                                             <input id="rt" type="text" minlength="10" maxlength="10" name="phone" class="form-control" placeholder="Mobile No." required />
+                                             <input id="rt" type="text" minlength="6" maxlength="6" name="pincode" class="form-control" placeholder="PIN Code" required />
+                                             <input id="rt" type="password" class="form-control"  name="pass" placeholder="Password" required/>
+                                        <button class="btnRegister" onclick="newRegister()">Register</button>
+                                    </div>
+
+                                       </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+<script type="text/javascript" src="js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="css/signup.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+ <!--  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main> -->
+
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3 id="welcome">Welcome to TeleDoc</h3>
+                        <p>You are 30 seconds away from joining us!</p>
+                         <a href="signup.ejs"><button class="btnRegister" style="margin-top: 70px;">Click here to SignUp</button></a>
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                             <!--  <li class="nav-item">
+                                <a class="nav-link active" id="clinic-tab" data-toggle="tab" href="#clinic" role="tab" aria-controls="clinic" aria-selected="true">Clinic</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link active" id="doctor-tab" data-toggle="tab" href="#doctor" role="tab" aria-controls="doctor" aria-selected="true">Doctor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="patient-tab" data-toggle="tab" href="#patient" role="tab" aria-controls="patient" aria-selected="false">Patient</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                           <!--  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Clinic Registration</h3>
+                                <div class="row formbox">
+                                    <div class="col-md-6">
+                                       <form action="/clinicuser" method="POST" class="register-form">
+                                             <input type="text" class="form-control" placeholder="Name" name="name" required/>
+                                             <input type="text" minlength="10" maxlength="10" name="phone" class="form-control" placeholder="Enter your mobile no. as I'D" required />
+                                             <input type="password" class="form-control"  name="pass" placeholder="Password" required/>
+                                             <button class="btnRegister" style="margin-top: 15px;">Login</button>
+
+                                       </form>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_c2BR-m734FAzkKi71MJbONcID6FUe1cjbg&usqp=CAU" class="regimg" style="margin-bottom: 80px;" alt=""/>
+                                        
+                                    </div>
+
+                                </div>
+                            </div> -->
+                            <div class="tab-pane fade show active" id="doctor" role="tabpanel" aria-labelledby="doctor-tab">
+                                <h3  class="register-heading">SignIn as Doctor</h3>
+                                <div class="row formbox">
+                                    <div class="col-md-6">
+                                       <form action="/doctoruser" method="POST" class="register-form">
+
+                                          <input type="number" class="form-control" placeholder="Enter your age as your I'D" name="age" required/>
+                                          <button class="btnRegister" style="margin-top: 15px;">Login</button>
+
+                                       </form>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjNxemDEPYvnfF-678vHqO2O3J4ripjEdfYw&usqp=CAU" class="regimg" style="margin-bottom: 80px;" alt=""/>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="patient" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3  class="register-heading">SignIn as Patient</h3>
+                                 <div class="row formbox">
+                                    <div class="col-md-6">
+                                       <form action="/patientuser" method="POST" class="register-form">
+
+                                          <input type="number" class="form-control" placeholder="Enter your I'D" name="age" required/>
+                                          <button class="btnRegister" style="margin-top: 15px;">Login</button>
+
+                                       </form>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                       <img src="images/patient.jpg" class="regimg" style="margin-bottom: 80px;" alt=""/>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+<script type="text/javascript" src="js/signup.js"></script>
+</body>
+</html>

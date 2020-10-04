@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>IIC</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<!-- Bootstrap-CSS -->
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link
+		href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+</head>
+
+<body>
+	<!-- main banner -->
+	<div class="main-top" id="home">
+		<!-- header -->
+		<header>
+			<div class="container">
+				<div class="header d-md-flex align-items-center text-center py-2">
+					<!-- phone number -->
+					<!-- <p class="header-top_w3layouts text-wh">
+						<span class="fa fa-volume-control-phone"></span><b>+1234567890</b>
+					</p> -->
+					<!-- //phone number -->
+					<!-- logo -->
+					<div id="logo" class="mx-md-auto">
+						<h1><a href="homepage.ejs">TeleDoc<img src="images/agbi.png" class="img-fluid ml-2"
+									alt=" " style="border-radius: 30px;padding: 5px;"></a></h1>
+					</div>
+					<!-- //logo -->
+					<!-- search -->
+					<div class="search-w3layouts">
+						<span class="form-control btn col-md-3 col-2" type="submit" id="signup"><span><img onclick="signup()" title="SignUp" src="images/signup.png" style="height: 40px;width: 40px; margin-right: 20px;border: 1px solid grey;border-radius: 30px;padding: 1px;"></span></span>
+						<span class="form-control btn col-md-3 col-2" type="submit" id="signin"><span><img onclick="signin()" title="SignIn" src="images/signin.jpg" style="height: 40px;width: 40px; border-radius: 50px;margin-left: 25px;border: 1px solid grey;padding: 1px;"></span></span>
+					</div>
+					<!-- //search -->
+					
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+		<!-- nav -->
+		<div class="nav_w3ls">
+			<div class="container">
+				<nav>
+					<label for="drop" class="toggle">Menu</label>
+					<input type="checkbox" id="drop" />
+					<ul class="menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#services">Services</a></li>
+						<!-- <li>
+					
+							<label for="drop-2" class="toggle toogle-2">Dropdown <span class="fa fa-angle-down"
+									aria-hidden="true"></span>
+							</label>
+							<a href="#">Appointnment <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+							<input type="checkbox" id="drop-2" />
+							<ul>
+								<li><a href="#appointment" class="drop-text" id="">Appointment</a></li>
+								<li><a href="#why" class="drop-text">Why Choose Us?</a></li>
+								<li><a href="#news" class="drop-text">Our News</a></li>
+								<li><a href="#facts" class="drop-text">Reviews</a></li>
+								<li><a href="#some" class="drop-text">More Info</a></li>
+							</ul>
+						</li> -->
+						<li><a href="#doctors">Doctors</a></li>
+						<li><a href="#socialmedia">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- //nav -->
+
+		<!-- banner -->
+		<div class="banner_w3lspvt">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 left_img">
+						<img src="images/banner.png" alt="" class="img-fluid mt-md-5 mt-2" />
+					</div>
+					<div class="col-md-6 w3ls_banner_txt text-right">
+						<h6>Welcome to TeleDoc</h6>
+						<h3 class="mt-2">Caring for all your Families needs.</h3>
+						<a href="#services" class="btn button-style mt-sm-5 mt-4">Our Services</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //banner -->
+	</div>
+	<!-- //main banner -->
+
+	<!-- banner bottom -->
+	<section class="bottom-bann-w3ls py-md-5 py-5">
+		<div class="container">
+			<div class="feature-grids row">
+				<div class="col-lg-4 future-wthree">
+					<div class="bottom-gd d-flex">
+						<div class="icon-gd col-3 text-center">
+							<span class="fa fa-phone"></span>
+						</div>
+						<div class="icon-gd-info col-9">
+							<h3 class="mb-2">Call to Us</h3>
+							<p>+100 026 3676</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 future-wthree mt-lg-0 mt-4">
+					<div class="bottom-gd d-flex">
+						<div class="icon-gd col-3 text-center">
+							<span class="fa fa-clock-o"></span>
+						</div>
+						<div class="icon-gd-info col-9">
+							<h3 class="mb-2">Open Hours</h3>
+							<p>Mon - Sat: 8 Am - 5 Pm, Sunday: CLOSED</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 future-wthree mt-lg-0 mt-4">
+					<a href="#appointment"><div class="bottom-gd d-flex">
+						<div class="icon-gd col-3 text-center">
+							<span class="fa fa-pencil-square-o"></span>
+						</div>
+						<div class="icon-gd-info col-9">
+							<h3 class="mb-2">Appointment</h3>
+							<p>It’s So Fast & Easy</p>
+						</div>
+					</div></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //banner bottom -->
+
+	<!-- services -->
+	<div class="serives py-5" id="services">
+		<div class="container-fluid pt-lg-3 pb-lg-5">
+			<div class="title-div text-center mb-md-5 mb-4">
+				<h6 class="w3ls-title-sub">What we do</h6>
+				<h3 class="w3ls-title">Our Services</h3>
+			</div>
+			<div class="row text-center pt-3 px-4">
+				<div class="col-lg-4 col-md-6 mt-md-5">
+					<div class="ser-grid">
+						<span class="fa fa-stethoscope"></span>
+						<h4>Precise Ailment Analysis</h4>
+						<p>Analyzing the ailment very closely and precisely</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+					<div class="ser-grid">
+						<span class="fa fa-user-md"></span>
+						<h4>Experienced Doctors</h4>
+						<p>Treat your ailment with experiened team of doctors</p>
+					</div>
+				</div>
+				<!-- <div class="col-lg-3 col-md-6 mt-5">
+					<div class="ser-grid">
+						<span class="fa fa-wheelchair"></span>
+						<h4>Heading Here</h4>
+						<p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+					</div>
+				</div> -->
+				<div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+					<div class="ser-grid">
+						<span class="fa fa-plus-square"></span>
+						<h4>Nearest Clinic</h4>
+						<p>Join us to your nearest clinic</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- services -->
+
+	<!-- about -->
+	<section class="about py-5" id="about">
+		<div class="container py-lg-5 py-md-3">
+			<h3 class="heading mb-4">About <span> Us</span> </h3>
+			<div class="row">
+				<div class="col-lg-5 about-left">
+					<p>An online single platform to link all the stakeholders which reduces the complications.
+						IoT enabled cloud solutions to collect live body data from patients.
+						AI and ML model to help doctors to predict disease accurately and provide medication solutions.
+						</p>
+					<p class="mt-3">Data Collection and Analysis of Diagnosis reports for research work in medical field..</p>
+				</div>
+				<div class="col-lg-7 about-right text-center mt-lg-0 mt-5">
+					<div class="row">
+						<div class="col-sm-4 col-4 grid1">
+							<span class="fa fa-h-square"></span>
+							<h4 class="mt-3">Better Environment <br></h4>
+						</div>
+						<div class="col-sm-4 col-4 grid2 border-grid">
+							<span class="fa fa-ambulance"></span>
+							<h4 class="mt-3">Quality Care<br></h4>
+						</div>
+						<div class="col-sm-4 col-4 grid3">
+							<span class="fa fa-medkit"></span>
+							<h4 class="mt-3">Experioenced Team <br></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //about -->
+
+	<!-- appointment form -->
+	<!-- <section class="appointment-content py-5" id="appointment">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row">
+				<div class="col-lg-6">
+					<h3 class="title-appoint">Book Appointment</h3>
+					<form action="#" method="post" class="booking">
+						<div class="form-group">
+							<input placeholder="Enter your Name" class="form-control" name="name" type="text"
+								required="">
+						</div>
+						<div class="form-group">
+							<input placeholder="Enter your E-mail" class="form-control" name="email" type="email"
+								required="">
+						</div>
+						<div class="form-group">
+							<input placeholder="Enter your Contact Number" class="form-control" name="number"
+								type="text" required="">
+						</div>
+						<div class="form-group">
+							<input placeholder="Enter your Token Id" class="form-control" name="token_no"
+								type="number" required="">
+						</div> -->
+
+						<!-- <div class="form-group">
+							<input placeholder="Enter your Date" class="form-control" name="date" type="text"
+								required="">
+						</div>
+						<div class="form-group">
+							<input placeholder="Enter your Time" class="form-control" name="time" type="text"
+								required="">
+						</div> -->
+						<!-- <div class="form-group">
+							<input list="illness" id="diseases" placeholder="Enter your disease consultant type" class="form-control" name="doctor-type" type="text"
+								required=""  />
+							<datalist id="illness">
+							    <option value="Family Physician">
+							    <option value="Emergency Medicine Specialists">
+							    <option value="Dermatologists">
+							    <option value="Cardiologists">
+							    <option value="Critical Care Medicine Specialists">
+							</datalist>
+
+						</div>
+						<button class="book-w3three btn mt-3" id="app">Get Appointment </button>
+					</form>
+				</div>
+				<div class="col-lg-6">
+					<img src="images/app1.png" alt="" class="img-fluid mt-5">
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- //appointment form -->
+
+	<!-- middle section -->
+	<!-- <section class="middle-w3l py-5" id="some">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row">
+				<div class="col-lg-6 slider-info">
+					<img src="images/mid.png" alt="" class="img-fluid" />
+				</div>
+				<div class="col-lg-6 mt-xl-5 mt-4 pt-xl-3">
+					<p class="sub-title-top text-bl mb-xl-3 mb-2">the smile of your dreams</p>
+					<h3 class="title-w3-ab mb-3">Your Best Dental Experience Here</h3>
+					<p class="mt-4">Suspendisse nec diam sit amet mauris bibendum sollicitudin. In libero nunc, feugiat
+						laoreet
+						nisi
+						ac, rutrum venenatis felis. Donec at elit ullamcorper, pretium ligula ac.</p>
+					<a href="#appointment" class="btn button-style mt-sm-5 mt-4">Make an Appointment</a>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- //middle section -->
+
+	<!-- why -->
+	<!-- <div class="what bg-li py-5" id="why">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row about-bottom-w3l text-center mt-4">
+				<div class="col-lg-4 about-grid">
+					<div class="about-grid-main">
+						<img src="images/d1.png" alt="" class="img-fluid">
+						<h4 class="my-4">Paediatric Dentistry</h4>
+						<p> Ut enim ad minim veniam, quis nostrud.Excepteur sint occaecat cupidatat non proident</p>
+					</div>
+				</div>
+				<div class="col-lg-4 about-grid my-lg-0 my-5">
+					<div class="about-grid-main">
+						<img src="images/d1.png" alt="" class="img-fluid">
+						<h4 class="my-4">Oral Surgery</h4>
+						<p>Ut enim ad minim veniam, quis nostrud.Excepteur sint occaecat cupidatat non proident</p>
+					</div>
+				</div>
+				<div class="col-lg-4 about-grid">
+					<div class="about-grid-main">
+						<img src="images/d1.png" alt="" class="img-fluid">
+						<h4 class="my-4">Orthodontic Treatment</h4>
+						<p>Ut enim ad minim veniam, quis nostrud.Excepteur sint occaecat cupidatat non proident</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- //why -->
+
+	<!-- doctors -->
+	<section class="team py-5" id="doctors">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-div text-center mb-md-5 mb-4">
+				<h3 class="w3ls-title text-wh">Meet Our Doctors</h3>
+				<h6 class="w3ls-title-sub mt-1">Professionals</h6>
+			</div>
+			<div class="row inner-sec-w3layouts-w3pvt-lauinfo pt-3">
+				<div class="col-md-4 col-sm-6">
+					<div class="team-grids text-center">
+						<img src="images/t3.png" class="img-fluid" alt="">
+						<div class="social-icons-section">
+							<a class="fac" href="#">
+								<span class="fa fa-facebook"></span>
+							</a>
+							<a class="twitter" href="#">
+								<span class="fa fa-twitter"></span>
+							</a>
+							<a class="google" href="#">
+								<span class="fa fa-google-plus"></span>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+						<div class="team-info">
+							<div class="caption">
+								<h4>Dr. Yash Kumar</h4>
+								<h6>Family Physician</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 mt-sm-0 mt-5">
+					<div class="team-grids text-center">
+						<img src="images/t1.png" class="img-fluid" alt="">
+						<div class="social-icons-section">
+							<a class="fac" href="#">
+								<span class="fa fa-facebook"></span>
+							</a>
+							<a class="twitter" href="#">
+								<span class="fa fa-twitter"></span>
+							</a>
+							<a class="google" href="#">
+								<span class="fa fa-google-plus"></span>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+						<div class="team-info">
+							<div class="caption">
+								<h4>Dr. Sakshi Koundal</h4>
+								<h6>Dermatologists</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 mt-md-0 mt-5">
+					<div class="team-grids text-center">
+						<img src="images/t2.png" class="img-fluid" alt="">
+						<div class="social-icons-section">
+							<a class="fac" href="#">
+								<span class="fa fa-facebook"></span>
+							</a>
+							<a class="twitter" href="#">
+								<span class="fa fa-twitter"></span>
+							</a>
+							<a class="google" href="#">
+								<span class="fa fa-google-plus"></span>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+						<div class="team-info">
+							<div class="caption">
+								<h4>Dr. Nikhil Kumar Singh</h4>
+								<h6>Orthodontist</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- doctors -->
+
+	<!-- blog -->
+
+	<!-- <section class="blog_w3ls py-5" id="news">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-div text-center mb-md-5 mb-4">
+				<h3 class="w3ls-title">Latest News</h3>
+				<h6 class="w3ls-title-sub mt-1"> Blog Post</h6>
+			</div>
+			<div class="row pt-2"> -->
+				<!-- blog grid -->
+<!-- 				<div class="col-lg-4 col-md-6">
+					<div class="med-blog">
+						<div class="blog-header">
+							<a href="#">
+								<img class="img-fluid" src="images/blog2.jpg" alt="image">
+							</a>
+						</div>
+						<div class="blog-body py-4">
+							<span>April 13, 2019 - loremipsum</span>
+							<a href="#" class="blog-title">Dictum porta auris magna umgtdd fos</a>
+							<p>Cras ultricies ligula sed magna dictum portaout auris blandita. Nulla viverra pharetra
+								se.</p>
+						</div>
+					</div>
+				</div>
+ -->				<!-- //blog grid -->
+				<!-- blog grid -->
+<!-- 				<div class="col-lg-4 col-md-6 mt-md-0 mt-3">
+					<div class="med-blog">
+						<div class="blog-header">
+							<a href="#">
+								<img class="img-fluid" src="images/blog1.jpg" alt="image">
+							</a>
+						</div>
+						<div class="blog-body py-4">
+							<span>April 14, 2019 - pharetra</span>
+							<a href="#" class="blog-title">Quis autem vel eum iure reprehdd ende</a>
+							<p>Cras ultricies ligula sed magna dictum portaout auris blandita. Nulla viverra pharetra
+								se.</p>
+						</div>
+					</div>
+				</div> -->
+				<!-- //blog grid -->
+				<!-- blog grid -->
+<!-- 				<div class="col-lg-4 col-md-6 mt-lg-0 mt-3">
+					<div class="med-blog">
+						<div class="blog-header">
+							<a href="#">
+								<img class="img-fluid" src="images/blog3.png" alt="image">
+							</a>
+						</div>
+						<div class="blog-body py-4">
+							<span>April 15, 2019 - portaout</span>
+							<a href="#" class="blog-title">Suscipit labo iosam nisi ut aliquid</a>
+							<p>Cras ultricies ligula sed magna dictum portaout auris blandita. Nulla viverra pharetra
+								se.</p>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	</section> -->
+	<!-- //blog -->
+
+	<!-- contact -->
+	<!-- <section class="contact text-center py-5" id="contact">
+		<div class="container  py-xl-5 py-lg-3">
+			<div class="title-div text-center mb-md-5 mb-4">
+				<h6 class="w3ls-title-sub">Get in touch</h6>
+				<h3 class="w3ls-title">Contact Us</h3>
+			</div>
+			<form action="#" method="post">
+				<div class="row main-w3layouts-teams-sectns">
+					<div class="col-md-6 form-group">
+						<input type="text" name="name" class="form-control" placeholder="Enter Your Name..."
+							required="">
+					</div>
+					<div class="col-md-6 form-group">
+						<input type="email" name="email" class="form-control" placeholder="Enter Your Email..."
+							required="">
+					</div>
+				</div>
+				<div class="row main-w3layouts-teams-sectns">
+					<div class="col-md-6 form-group">
+						<input type="text" name="subject" class="form-control" placeholder="Enter Your Subject..."
+							required="">
+					</div>
+					<div class="col-md-6 form-group">
+						<input type="text" name="number" class="form-control" placeholder="Enter Your Phone Number..."
+							required="">
+					</div>
+				</div>
+				<div class="main-w3layouts-teams-sectns form-group">
+					<textarea class="form-control" name="message" placeholder="Enter Your Message..."></textarea>
+				</div>
+				<button type="submit" class="contc-btn-wthree btn">Submit</button>
+			</form>
+		</div>
+	</section> -->
+	<!-- //contact -->
+
+	<!-- facts -->
+	<!-- <section class="bottom-banner-w3layouts py-5" id="facts">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row">
+				<div class="col-lg-6 banner-about ">
+					<div class="inner-heading">
+						<h3 class="main-title-w3pvt text-capitalize mb-4"> Amazing Facts about our Dental Plus
+						</h3>
+						<p class="sub-wthrees">Donec cursus congue risus quis arius <br>Accumsan aliquam fdfdf. Morbi
+							semper nunc.
+						</p>
+					</div>
+					<div class="row text-center mt-lg-5 mt-4">
+						<div class="col-6 mt-4 fact-w3ls-wthree">
+							<div class="wthree-cont-sta">
+								<h3>800+</h3>
+								<p>Happy Smiles</p>
+							</div>
+						</div>
+						<div class="col-6 mt-4 fact-w3ls-wthree">
+							<div class="wthree-cont-sta">
+								<h3>965+</h3>
+								<p>Patients a year</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 mt-5">
+					<div class="bg-wh p-sm-5 p-4">
+						<p class="sub-test-w3ls"><span class="fa fa-quote-left"></span>Nam libero tempore, cum soluta
+							nobis est eligendi optio cumque nihil
+							impedit quo minus id quod possimus, omnis voluptas.
+						</p>
+						<div class="row mt-5">
+							<div class="col-3 testi-img-res">
+								<img src="images/te1.jpg" alt=" " class="img-fluid" />
+							</div>
+							<div class="col-9 w3_testi_grid  mt-xl-3 mt-lg-2 mt-md-4 mt-2">
+								<h5 class="mb-1">Adam Ster</h5>
+								<p>Sed do eiusmod</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- //facts -->
+
+	<!-- footer -->
+	<footer class="footer py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 footer-top">
+					<h2>
+						<a href="homepage.ejs" class="navbar-brand">TeleDoc<img src="images/agbi.png"
+								class="img-fluid ml-2" alt=" "></a>
+					</h2>
+					<p class="w3-contact">
+						<a href="mailto:example@email.com">info@example.com</a>
+					</p>
+					<p class="w3-contact">+456 123 7890</p>
+					<p class="w3-contact">+90 nsequursu dsdesdc,
+						<br>xxx Street State 34789.</p>
+				</div>
+				<div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+					<div class="footer2-w3ls">
+						<h3 class="mb-3 w3f_title">Quick Links</h3>
+						<hr>
+						<ul class="list-w3pvtits list-unstyled pt-1">
+							<li>
+								<a href="homepage.ejs">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#services">
+									Services
+								</a>
+							</li>
+							<li>
+								<a href="#news">
+									Blog Post
+								</a>
+							</li>
+							<li>
+								<a href="#contact">
+									Contact Us
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 mt-lg-0 mt-4">
+					<div class="footer2-w3ls">
+						<h3 class="mb-3 w3f_title">Experinced Doctors</h3>
+						<hr>
+						<ul class="list-w3pvtits list-unstyled pt-1">
+							<li>
+								<a href="#doctors">
+									Dr. Yash Kumar
+								</a>
+							</li>
+							<li>
+								<a href="#doctors">
+									Dr. Sakshi Koundal
+								</a>
+							</li>
+							<li>
+								<a href="#doctors">
+									Dr. Nikhil Kumar Singh
+								</a>
+							</li>
+							<li>
+								<a href="#doctors">
+									Dr. Rishab Gupta
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 mt-lg-0 mt-4">
+					<div class="footer2-w3ls">
+						<h3 class="mb-3 w3f_title" id="socialmedia">Social Links</h3>
+						<hr>
+						<ul class="list-w3pvtits list-unstyled pt-1">
+							<li>
+								<a href="#">
+									Facebook
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Twitter
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Dribbble
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Instagram
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer bottom -->
+	</footer>
+	<!-- //footer -->
+	<!-- copyright -->
+	<div class="cpy-right text-center">
+		<p class="text-wh">@2020 TeleDoc. All rights reserved | Design by TeleDoc Team
+		</p>
+	</div>
+	<!-- //copyright -->
+	<!-- move top icon -->
+	<a href="#home" class="move-top text-center">
+		<span class="fa fa-chevron-circle-up" aria-hidden="true"></span>
+	</a>
+	<!-- //move top icon -->
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

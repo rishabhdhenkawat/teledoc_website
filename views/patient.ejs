@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/patient.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<div class="main">
+
+	   <!-- navbar -->
+	    <!-- <div class="d-flex justify-content-around" id="nav">
+	    	<a href="#" id="navitem">Personal</a>
+	    	<a href="#" id="navitem">Appointments</a>
+	    	<a href="#" id="navitem">Patients</a>
+	    	<a href="#" id="navitem">Departments</a>
+	    	<a href="#" id="navitem">Reports</a>
+	    </div> -->
+	    <hr class="mt-4 ">
+	    
+	    <!-- details section -->
+        <div class="detsec1" id="#anurag" >
+		    <div class="details" >
+
+				<!--   <h3 id="infonm">Appointment Information</h3>
+				  <p id="ico"><span id="dt"><i class="far fa-calendar-alt"></i> 08/08/2020</span></p>
+				  <p id="ico"><span id="dt"><i class="fas fa-clock"></i> 10.00 AM - 10.30 AM</span></p> -->
+			      <h3 id="infonm">Your Medical Dashoard</h3>
+			      <div id="patinfo">
+			      	<p id="user"><span id="use"><i class="fas fa-hospital-user"></i></span><span id="patinfonm">Demo Data</span></p>
+			      	<hr>
+			      	<p id="userd"><span id="dob">Date of Birth  :  </span>xx/xx/2000</p>
+			        <p id="userd"><span id="dob">Gender         :  </span>Male</p>
+			        <p id="userd"><span id="dob">Previous Visit :  </span>xx/xx/2020</p>
+			        <p><h5 style="font-size: 18px; margin-left: 10px;">Contacts</h5></p>
+			        <p id="ico"><span id="dt"><i class="fas fa-phone-alt"></i> <span id="con">+91 xxxxxxxx</span></span></p>
+			        <p id="ico"><span id="dt"><i class="fas fa-envelope"></i> <span id="con">xxxx@gmail.com</span></span></p>
+			        <p id="ico"><span id="dt"><i class="fas fa-map-marker-alt"></i> <span id="con">xxx xxx xxx xxx</span></span></p>
+			      </div><br>
+			      <h3 id="infonm"><a href="#">Recent Documents</a></h3>
+			      <div id="square">
+			      	<div id="rec"><i class="far fa-image fa-2x"></i><br><span id="recnm">X-Ray</span></div>
+			      	<div id="rec"><i class="far fa-file-pdf fa-2x"></i><br><span id="recnm">Body Test</span></div>
+			      	<div id="rec"><i class="far fa-file-pdf fa-2x"></i><br><span id="recnm">Lab Test</span></div>
+			      </div>
+			      <hr width="100%" style="border-width: 3px;">
+			      <h4 id="reschedule" style="color: red; margin-left: 155px;">Reschedule</h4>
+			       <hr width="100%" style="border-width: 3px;">
+	        </div>
+	        <div class="tiles">
+	        	<div id="tile1">
+	        		<div class="r1" id="respiration"><img src="images/respiration.png"><span id="tilesnm">Respiration Rate</span><br><span id="res" style="font-size: 12px;margin-left: 15px;"><%= resp_rate %></span></div>
+	        		<div class="r1" id="gulocse"><img src="images/bloodgulcose.png"><span id="tilesnm">Blood Gulcose</span><br><span id="gul" style="font-size: 12px;"><%= blood_gulcose %></span></div>
+	        		<div class="r1" id="temp"><img src="images/bodytemp.png"><span id="tilesnm">Temperature</span><br><span id="tem" style="font-size: 12px;"><%= body_temp %></span></div>
+	        	</div>
+	        	<div id="tile1">
+	        		<div class="r1" id="pressure"><img src="images/bloodpressure.png"><span id="tilesnm">Blood Pressure</span><br><span id="pre" style="font-size: 12px;"><%= blood_press %></span></div>
+	        		<div class="r1" id="weight"><img src="images/bodyweight.png"><span id="tilesnm">Body Weight</span><br><span id="wei" style="font-size: 12px;"><%= body_weight %></span></div>
+	        		<div class="r1" id="pulse"><img src="images/pulse.png"><span id="tilesnm">Pulse Rate</span><br><span id="pul" style="font-size: 12px;"><%= pul_rate %></span></div>
+	        	</div>
+	        	<!-- <div id="tile1">
+	        		
+	        	</div> -->
+	        	<div id="vc">
+	        		<h4 style="text-align: center;margin-top: 15px;">Phone Call Your Doctor</h4>
+	        		<a href="#" id="phone" style="text-decoration: none;"><p id="ico" class="mt-1" style="border :1px solid black; margin-left: 25px;"><span id="dt"><i class="fas fa-phone-alt"></i> <span id="con">+91 3462533614</span></span></p></a>
+	        		<h4 style="text-align: center;margin-top: 15px;">Video Call Your Doctor</h4>
+	        		<a href="#" id="video"><p id="ico" class="mt-1" style="border :1px solid black; margin-left: 25px;"><span id="dt"><i class="fas fa-video"></i> <span id="con">+91 3462533614</span></span></p></a>
+	        	</div>
+	        	<hr style="border-width: 3px">
+	        	<h4 id="cancel" style="color: red; margin-left: 265px;margin-bottom: 10px;">CANCEL</h4>
+	        	<hr style="border-width: 3px">
+
+	        </div>
+	    </div>
+	    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/dashboard.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+*{
+	margin-right: 25px;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	background-color:#BDEDFF ;
+}
+
+.main{
+	height: 1030px;
+	margin: auto;
+	background-color: #ffffff;
+	
+
+}
+#nav:hover a{
+	color: #BDEDFF;
+	
+}
+
+#nav{	
+    height: 30px;
+	background-color: #ffffff;
+}
+#navitem{
+	color: #B6B6B4;
+	text-decoration: none;	
+}
+#appoint{
+	color: #B6B6B4;
+	background: transparent;
+	margin-top: 10px;
+	padding-top: 5px;
+}
+.appointment{
+	width: 350px;
+	height:950px;
+	margin: auto 0;
+	margin-left: 5px;
+	background-color: #DCDCDC;
+	float: left;
+}
+
+#app1{
+	background-color: #ffffff;
+	max-width: 290px;
+	height: 160px;
+	margin: 0 auto;
+}
+#patimg{
+	margin :0;
+	height: 35px;
+	width: 35px;
+	background-color: transparent;
+	padding-left: 2px;
+	margin-left: 15px;
+	border-radius: 20px;
+	margin-top: 15px;
+}
+#patnm{
+	margin-left: 12px;
+	text-transform: uppercase;
+	background-color: transparent;
+	font-size: 15px;
+	color: #B6B6B4;
+	margin-top: auto ;
+
+}
+.appointmnet div a : hover{
+   color:#000;
+
+}
+#ails{
+	text-decoration: none;
+}
+
+.appointment div button{
+	background:#BDEDFF;
+	width: 100px;
+}
+#accept{
+	color:#00E5EE;
+	margin: 0 auto;
+}
+#ignore{
+	color:#00E5EE;
+	margin: 0 auto;
+}
+
+
+
+/*detail section*/
+
+.detsec1{
+	margin-left: 358px;
+	margin-right: 20px;
+	height: 950px;
+	
+}
+.detcsec2{
+	margin-left: 368px;
+	margin-right: 20px;
+	height: 950px;
+}
+.details{
+	width: 450px;
+	/*margin-left: 368px;*/
+	margin-right: 5px;
+	margin-top: 0;
+    height:950px;
+    float: left;
+   
+}
+#infonm{
+	margin-top: 18px;
+	margin-left: 15px;
+	
+
+}
+#infonm a{
+	text-decoration: none;
+	color: black;
+	margin-left: 0;
+}
+#infonm a:hover{
+	color:#00E5EE;
+}
+#icon{
+	width: 10px;
+	height: 10px;
+}
+#ico{
+	margin-bottom: 5px;
+
+}
+#dt{
+	
+	margin-left: 20px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+#use{
+	margin-left: 10px;
+	font-size: 30px;
+}
+#userd{
+	margin-left: 10px;
+}
+
+#patinfo{
+	width: 400px;
+	height: 420px;
+	background: transparent;
+	margin-left: 15px;
+	border-radius: 10px;
+	margin-top: 10px;
+	border:1px solid black;
+}
+#patinfonm{
+	margin-left: 15px;
+	font-size:  20px;
+}
+#dob{
+font-size: 15px;	
+}
+#con{
+	font-size: 15px;
+	margin-left: 5px;
+}
+#square{
+ width: 420px;
+ height: 120px;
+ margin-left: 15px;
+/* background-color: #000;*/
+ border-radius: 10px;
+ border:1px solid black;
+
+}
+#rec{
+	width:100px;
+	height:100px;
+	float: left;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	background-color: white;
+}
+#recnm{
+	text-align: center;
+	font-size: 10px;
+	background-color: #fff;
+		
+}
+
+.tiles{
+	/*border: 2px solid black;*/
+	margin-left: 470px;
+	margin-top: 0;
+	margin-right: 30px;
+	height: 950px;
+	width:415px;
+    
+}
+#tile1{
+	width: 390px;
+	height:150px;
+	
+	margin-left: 5px;
+	margin:5px auto;
+}
+.r1{
+	
+	margin-left: 50px;
+	margin-right: 20px;
+	border: 1px solid black;
+    margin-bottom: 1px;
+    margin-top: 5px;
+	height: 160px;
+	float: left;
+	width: 120px;
+}
+/*#respiration{
+	background: url('images/respiration.png');
+}*/
+#tile1 .r1 img{
+	margin-top: 0px;
+	margin-left: 0;
+	margin-right: 5px;
+	margin-bottom: 1px;
+	height: 100px;
+	width: 118px;
+
+}
+
+#tilesnm{
+	margin-left: 15px;
+	font-size: 10px;
+	text-align: center;
+
+}
+
+#vc{
+	border :1px solid black;
+	width: 310px;
+	height: 358.5px;
+	margin-left: 58px;
+	margin-top: 50px;
+	
+}
